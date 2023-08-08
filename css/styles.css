@@ -1,0 +1,36 @@
+body {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  text-align: center;
+  position: relative;
+  padding: 30px 20px;
+  background: white;
+  border: 1px solid #778;
+  border-radius: 5px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
