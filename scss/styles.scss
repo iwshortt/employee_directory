@@ -1,8 +1,47 @@
 // ------------------------------------------
 // Base Styles
 // ------------------------------------------
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(99, 99, 99);
+}
 body {
     position: relative;
+    padding: 45px;
+}
+
+// ------------------------------------------
+// Base Styles
+// ------------------------------------------
+h1 {
+    margin: 0 0 30px 0;
+    font-weight: 300;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+.name {
+    font-weight: 400;
+    font-size: 1.15em;
+}
+.email,
+.address {
+    font-weight: 100;
+    font-size: .9em;
+}
+.name,
+.email,
+.address {
+    margin: 0 0 5px;
+}
+.address {
+    margin-bottom: 0;
 }
 
 // ------------------------------------------
@@ -18,20 +57,68 @@ body {
 }
 .modal {
     width: 375px;
-    margin: 15% auto auto;
+    margin: 8% auto auto;
     text-align: center;
     position: relative;
     padding: 30px 20px;
     background: white;
-    border: 1px solid #778;
+    border: 1px solid lightgrey;
     border-radius: 5px;
+}
+.modal-content .avatar {
+    width: 125px;
+    height: 125px;
+    margin: 15px 0;
+}
+.modal-content .dob {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.modal-content .name,
+.modal-content .address,
+.modal-content .email,
+.modal-content .phone,
+.modal-content .dob {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.modal-content .name {
+    font-weight: normal;
+}
+.modal-content hr {
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
 }
 .modal-close {
     position: absolute;
     top: 5px;
     right: 15px;
     cursor: pointer;
+    border: none;
+    background-color: inherit;
 }
 .hidden {
     display: none;
+}
+
+// ------------------------------------------
+// Base Styles
+// ------------------------------------------
+.card {
+    display: flex;
+    align-items: center; //changed
+    border: 1.5px solid lightgrey;
+    border-radius: 5px;
+    // margin: 25px;
+    padding: 20px;
+    width: 350px;
+}
+.avatar {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 100px; //changed
+    height: 100px; //changed
 }
